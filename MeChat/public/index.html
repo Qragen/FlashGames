@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+</head>
+<body>
+    <div id="messages"></div>
+    <input type="text" id="username" placeholder="Enter username">
+    <input type="text" id="message" placeholder="Enter message" onkeypress="if(event.keyCode === 13) sendMessage();">
+    <button onclick="sendMessage()">Send</button>
+    <script>
+        const messagesDiv = document.getElementById('messages');
+        const usernameInput = document.getElementById('username');
+        const messageInput = document.getElementById('message');
+
+        async function fetchMessages() {
+            const response = await fetch('/api/messages');
+            const messages = await response.json();
+            messagesDiv.innerHTML = '';
+            messages.forEach(msg => {
+                const messageElement = document.createElement('div');
+                messageElement.textContent = `${msg.username}: ${msg.message}`;
+                messagesDiv.appendChild(messageElement);
+            });
+        }
+
+        async function sendMessage() {
+            const username = usernameInput.value;
+            const message = messageInput.value;
+            if (!username || !message) return;
+
+            await fetch('/api/messages', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, message })
+            });
+
+            messageInput.value = '';
+            fetchMessages();
+        }
+
+        setInterval(fetchMessages, 5000);
+        fetchMessages();
+    </script>
+</body>
+</html>

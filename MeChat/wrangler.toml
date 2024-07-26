@@ -1,0 +1,10 @@
+name = "chat-app"
+type = "javascript"
+account_id = "your-account-id"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./public"
+entry-point = "worker"
