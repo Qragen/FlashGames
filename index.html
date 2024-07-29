@@ -74,9 +74,18 @@
         text-decoration: none;
 	}
 	
+	.info{
+		color: var(--secondary-color);
+	}
+	
 	:root{
 		--primary-color: #edf2fc;
 		--secondary-color: #212121;
+	}
+
+	.dark-theme{
+		--primary-color: #000106;
+		--secondary-color: #fff;
 	}
 	nav ul{
 		flex: 1;
@@ -86,7 +95,7 @@
         .custom-button:hover {
             background-color: #0056b3; /* Darker shade of primary color for hover effect */
             transform: scale(1.05);    /* Slightly increase size on hover */
-	    color: #212121;
+	    color: var(--secondary-color);
         }
 
         .custom-button:active {
@@ -102,6 +111,20 @@
             padding: 20px; /* Optional padding for better layout */
 	    background: var(--primary-color);
         }
+	
+	.boxers {
+    	    border: 1px solid var(--secondary-color);
+    	    padding: 10px;
+   	    margin: 10px;
+    	    border-radius: 5px;
+    	    color: var(--secondary-color);
+    	    transition: transform 0.2s, box-shadow 0.2s;
+	}
+	    
+	.boxers:hover {
+    	    transform: translateY(-5px);
+   	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
     </style>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4146748834676749"
@@ -111,29 +134,29 @@
 	
 </head>
 <body>
-    <!-- Button at the top of the page -->
-    <div class="container">
-        <a href="https://www.physicsandmathstutor.com/" class="custom-button">Tests</a>
-    </div>
-
+	
     <!-- Div content -->
 	<div class="hero">
 		<nav>
 			<ul>
-				<li><a href="">flash game</a></li>
-				<li><a href="">emulated</a></li>
 				<li><a href="">others</a></li>
+				<li><a href="">emulated</a></li>
+				<li><a href="">flash game</a></li>
 				<br>
 			</ul>
 		  <img src="icons/moon.png" id="icon">
 		</nav>
 	</div>
+    <!-- Button at the top of the page -->
+    <div class="container">
+        <a href="https://www.physicsandmathstutor.com/" class="custom-button">Tests</a>
+    </div>
+
 	  <!-- Div content -->
 <div class="villan" style="margin:0 auto;text-align:center">
-	  <p>
- ----------------------------------------------------------------------
-    </p>
-
+	  
+	<p class="boxers">
+		
     <h3 class="villan">
       Flash Games 
     </h3>
@@ -270,11 +293,60 @@
 <a href="sonic.html">Ultimate Flash Sonic</a>
 -
 <a href="yeti.html">Yeti Sports: Pingu Throw </a>
-			    
+	</p>		
+
+	
+	    <p class="boxers">
+		    
+	   <h3>
+      Emulated
+    </h3>
+<a href="example/batman.html">Batman (NES)</a>
+-
+<a href="miscgame/contracool.html">Contra (NES)</a>
+-
+<a href="miscgame/doubled.html">Double Dragon (NES)</a>
+-
+<a href="example/ducktales.html">Duck Tales (NES)</a>
+-
+<a href="example/f13.html">Friday the 13th (NES)</a>
+ -
+<a href="miscgame/megamandos.html">Mega Man 2 (NES)</a>
+ -
+<a href="emu/mtyson.html">Mike Tysons Punch Out(NES)</a>
+-
+<a href="example/rivercity.html">River City Ransom (NES)</a>
+-
+<a href="miscgame/mariones.html">Super Mario Bros. (NES)</a>
+ -
+<a href="example/sm2.html">Super Mario Bros. 2 (NES)</a>
+-
+<a href="example/sm3.html">Super Mario Bros. 3 (NES)</a>
+ -
+<a href="GBA-gh-pages/launcher.html#dkc">Donkey Kong Country (GBA)</a>
+-
+<a href="GBA-gh-pages/launcher.html#dm">DOOM (GBA)</a>
+-	
+<a href="GBA-gh-pages/launcher.html#gta">Grand Theft Auto (GBA)</a>
+-
+<a href="GBA-gh-pages/launcher.html#nbaj">NBA Jam 2002 (GBA)</a>
+-
+<a href="GBA-gh-pages/launcher.html#pokemonemerald">Pokemon Emerald (GBA)</a>
+-
+<a href="GBA-gh-pages/launcher.html#super_street_fighter_3_alpha">Street Fighter Alpha III (GBA)</a>
+-
+<a href="GBA-gh-pages/launcher.html#supermarioadvance2">Super Mario World (GBA)</a>
+-
+<a href="emu/umk3.html">Ultimate Mortal Kombat 3 (SNES)</a>
+-
+<a href="emu/mariokartds.html">Mario Kart (DS)</a>
+-
+<a href="emu/mkart64.html">Mario Kart 64 (N64)</a>
+-
+<a href="emu/wwf.html">WWF No Mercy (N64)</a>
+	    </p>
 	 
-    <p>
-      ----------------------------------------------------------------
-    </p>
+    <p class="boxers">
 	   <h3>
        Other Games
     </h3>
@@ -324,56 +396,7 @@
 <a href="sm64/index.html">Super Mario 64</a>
 -
 <a href="wolfen/index.html">Wolfenstein 3D</a>
-    <p>
-      ----------------------------------------------------------------
     </p>
-	   <h3>
-      Emulated
-    </h3>
-<a href="example/batman.html">Batman (NES)</a>
--
-<a href="miscgame/contracool.html">Contra (NES)</a>
--
-<a href="miscgame/doubled.html">Double Dragon (NES)</a>
--
-<a href="example/ducktales.html">Duck Tales (NES)</a>
--
-<a href="example/f13.html">Friday the 13th (NES)</a>
- -
-<a href="miscgame/megamandos.html">Mega Man 2 (NES)</a>
- -
-<a href="emu/mtyson.html">Mike Tysons Punch Out(NES)</a>
--
-<a href="example/rivercity.html">River City Ransom (NES)
--
-<a href="miscgame/mariones.html">Super Mario Bros. (NES)</a>
- -
-<a href="example/sm2.html">Super Mario Bros. 2 (NES)</a>
--
-<a href="example/sm3.html">Super Mario Bros. 3 (NES)</a>
- -
-<a href="GBA-gh-pages/launcher.html#dkc">Donkey Kong Country (GBA)</a>
--
-<a href="GBA-gh-pages/launcher.html#dm">DOOM (GBA)</a>
--	
-<a href="GBA-gh-pages/launcher.html#gta">Grand Theft Auto (GBA)</a>
--
-<a href="GBA-gh-pages/launcher.html#nbaj">NBA Jam 2002 (GBA)</a>
--
-<a href="GBA-gh-pages/launcher.html#pokemonemerald">Pokemon Emerald (GBA)</a>
--
-<a href="GBA-gh-pages/launcher.html#super_street_fighter_3_alpha">Street Fighter Alpha III (GBA)</a>
--
-<a href="GBA-gh-pages/launcher.html#supermarioadvance2">Super Mario World (GBA)</a>
--
-<a href="emu/umk3.html">Ultimate Mortal Kombat 3 (SNES)</a>
--
-<a href="emu/mariokartds.html">Mario Kart (DS)</a>
--
-<a href="emu/mkart64.html">Mario Kart 64 (N64)</a>
--
-<a href="emu/wwf.html">WWF No Mercy (N64)</a>
-
 
     <p>
       ----------------------------------------------------------------
@@ -381,7 +404,21 @@
 	  <footer> 
  		Credits to Qrage and the rest of the team 😉
 		  </footer>
-		  
+
+<script>
+
+	var icon = document.getElementById("icon");
+
+	icon.onclick = function(){
+	  document.body.classList.toggle("dark-theme");
+	  if(document.body.classList.contains("dark-theme")){
+		icon.src = "icons/sun.png";
+	  }else{
+		icon.src = "icons/moon.png";
+	  }
+	}
+		
+</script>
 		  </body>
 	  
 
