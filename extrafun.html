@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics & Maths Tutor</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Button Styles */
+        .custom-button {
+            background-color: #007bff;
+            /* Primary color */
+            color: white;
+            /* Text color */
+            border: none;
+            /* Remove default border */
+            border-radius: 12px;
+            /* Rounded corners */
+            padding: 20px 40px;
+            /* Spacing inside the button */
+            font-size: 25px;
+            /* Font size */
+            font-weight: bold;
+            /* Bold text */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            transition: background-color 0.3s, transform 0.2s;
+            /* Smooth transition for hover effects */
+        }
+
+        .hero {
+            height: 10vh;
+            width: 100%;
+            background: var(--primary-color);
+            font-family: sans-serif;
+            position: relative;
+        }
+
+        .villan {
+            background: var(--primary-color);
+        }
+	.neutro{
+	    background: var(--primary-color);
+	    color: var(--primary-color);
+	}
+
+        nav {
+            width: 95%;
+            margin: auto;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #606163;
+        }
+
+        nav ul li a:hover {
+            color: #ff4321;
+        }
+
+        #icon {
+            width: 30px;
+            cursor: pointer
+        }
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            text-decoration: none;
+        }
+
+        .info {
+            color: var(--secondary-color);
+        }
+
+        :root {
+            --primary-color: #edf2fc;
+            --secondary-color: #212121;
+        }
+
+        .dark-theme {
+            --primary-color: #000106;
+            --secondary-color: #fff;
+        }
+
+        nav ul {
+            flex: 1;
+            text-align: right;
+        }
+
+        .custom-button:hover {
+            background-color: #0056b3;
+            /* Darker shade of primary color for hover effect */
+            transform: scale(1.05);
+            /* Slightly increase size on hover */
+            color: var(--secondary-color);
+        }
+	body {
+	    background: var(--primary-color);
+   	    margin: 0;
+    	    padding: 0;
+	    }
+
+
+        .custom-button:active {
+            background-color: #004080;
+            /* Even darker shade for active state */
+            transform: scale(0.98);
+            /* Slightly decrease size on click */
+            color: var(--primary-color);
+        }
+
+        /* Container styles */
+        .container {
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            /* Optional padding for better layout */
+            background: var(--primary-color);
+        }
+
+        .boxers {
+            border: 1px solid var(--secondary-color);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            color: var(--secondary-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .boxers:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4146748834676749" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Div content -->
+    <div class="hero">
+        <nav>
+            <ul>
+
+            </ul>
+            <img src="icons/moon.png" id="icon">
+        </nav>
+    </div>
+    <!-- Button at the top of the page -->
+    <div class="container">
+        <a href="https://www.physicsandmathstutor.com/" class="custom-button">Tests</a>
+    </div>
+
+    <!-- Div content -->
+    <div class="villan" style="margin:0 auto;text-align:center">
+
+        <div class="boxers">
+            <h3 class="villan">
+                Extra Fun😉😉😉
+            </h3>
+						<a href="Extrafun/fun/American-Dad-Mel-Loop/American-Dad-Mel-Loop.html">American-Dad-Mel-Loop</a>
+						 -
+						<a href="Extrafun/fun/Gardevoir's-Embrace/Gardevoir's-Embrace.html">Gardevoir's-Embrace</a>
+						-
+						<a href="star-battle-master/index.html">Star Battle Master</a>
+
+        </div>
+
+        <footer>
+		<p class="info">
+            Credits to Qrage and the rest of the team 😉
+		</p>
+	</footer>
+
+        <script>
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function () {
+                document.body.classList.toggle("dark-theme");
+                if (document.body.classList.contains("dark-theme")) {
+                    icon.src = "icons/sun.png";
+                } else {
+                    icon.src = "icons/moon.png";
+                }
+            }
+        </script>
+    </div>
+
+    <!-- Div align in the middle -->
+    <div style="margin-left:auto;margin-right:auto;text-align:center">
+    </div>
+</body>
+
+</html>
