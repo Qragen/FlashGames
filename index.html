@@ -69,6 +69,11 @@
 		width: 30px;
 		cursor: pointer
 	}
+	
+	a:link, a:visited, a:hover, a:active {
+        text-decoration: none;
+	}
+	
 	:root{
 		--primary-color: #edf2fc;
 		--secondary-color: #212121;
@@ -81,11 +86,13 @@
         .custom-button:hover {
             background-color: #0056b3; /* Darker shade of primary color for hover effect */
             transform: scale(1.05);    /* Slightly increase size on hover */
+	    color: #212121;
         }
 
         .custom-button:active {
             background-color: #004080; /* Even darker shade for active state */
-            transform: scale(0.98);    /* Slightly decrease size on click */
+            transform: scale(0.98); /* Slightly decrease size on click */
+	    color: var(--primary-color);
         }
 
         /* Container styles */
